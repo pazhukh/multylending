@@ -5,19 +5,15 @@ $(function () {
 		if( number.indexOf('&') != -1) {
 			number=(number.substr(0,number.indexOf('&')));
 		}
-		if(number == 'eng') {$('#go').html('àíãëèéñêîãî');}
-		if(number == 'iaponia') {$('#go').html('ÿïîíñêîãî');}
-		if(number == 'isp') {$('#go').html('èñïàíñêîãî');}
-		if(number == 'itl') {$('#go').html('èòàëüÿíñêîãî');}
+		if(number == 'eng') {$('#go').html('new tekst eng');}
+		if(number == 'iaponia') {$('#go').html('new tekst iaponia');}
+		if(number == 'isp') {$('#go').html('new tekst isp');}
+		if(number == 'itl') {$('#go').html('new tekst itl');}
 	}
 });
 
 
 or *********************************************************************
-
-
-favorite
-I have that jquery script:
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
@@ -43,3 +39,22 @@ var dynamicContent = getParameterByName('utm_term');
 });
 
 
+***********************************************************
+
+
+<?php
+ $utm = $_GET['utm_content'];
+ 
+ if($utm == 'sozdanie') {
+   $multiTitle = 'Создание landing page';
+ }
+ elseif($utm == 'verstka') {
+   $multiTitle = 'Верстка landing page';
+ }
+ elseif($utm == 'razrabotka') {
+   $multiTitle = 'Разработка landing page';
+ }
+ else{
+   $multiTitle = 'Блог о создании landing page';
+ }
+?>
