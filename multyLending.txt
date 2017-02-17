@@ -5,11 +5,12 @@ $(function () {
 		if( number.indexOf('&') != -1) {
 			number=(number.substr(0,number.indexOf('&')));
 		}
-		if(number == 'eng') {$('#go').html('английского');}
-		if(number == 'iaponia') {$('#go').html('японского');}
-		if(number == 'isp') {$('#go').html('испанского');}
-		if(number == 'itl') {$('#go').html('итальянского');}
+		if(number == 'eng') {$('#go').html('Г Г­ГЈГ«ГЁГ©Г±ГЄГ®ГЈГ®');}
+		if(number == 'iaponia') {$('#go').html('ГїГЇГ®Г­Г±ГЄГ®ГЈГ®');}
+		if(number == 'isp') {$('#go').html('ГЁГ±ГЇГ Г­Г±ГЄГ®ГЈГ®');}
+		if(number == 'itl') {$('#go').html('ГЁГІГ Г«ГјГїГ­Г±ГЄГ®ГЈГ®');}
 	}
+});
 
 
 or *********************************************************************
