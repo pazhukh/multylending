@@ -10,3 +10,35 @@ $(function () {
 		if(number == 'isp') {$('#go').html('испанского');}
 		if(number == 'itl') {$('#go').html('итальянского');}
 	}
+
+
+or *********************************************************************
+
+
+favorite
+I have that jquery script:
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+var dynamicContent = getParameterByName('utm_term');
+
+ $(document).ready(function() {
+
+            if (dynamicContent == 'buy') {
+        $('#buy').show();
+    }
+
+    else {
+        $('#default-content').show();
+    }
+});
+
+
