@@ -1,0 +1,12 @@
+$(function () {
+	var utm='utm_content';
+	if( window.location.toString().indexOf(utm +'=') != -1) {
+		var number=(window.location.toString().substr(window.location.toString().indexOf(utm+'=')+ utm.length+1,50)).toLowerCase();  
+		if( number.indexOf('&') != -1) {
+			number=(number.substr(0,number.indexOf('&')));
+		}
+		if(number == 'eng') {$('#go').html('английского');}
+		if(number == 'iaponia') {$('#go').html('японского');}
+		if(number == 'isp') {$('#go').html('испанского');}
+		if(number == 'itl') {$('#go').html('итальянского');}
+	}
